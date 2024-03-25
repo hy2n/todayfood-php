@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-require('C:\nanu\sec\api.php');
 ini_set('display_errors', '0');
 
 if (isset($_GET['date'])) {
