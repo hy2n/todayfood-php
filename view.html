@@ -31,7 +31,11 @@ if (file_exists($fileName)) {
     $dinner = $cachedData['dinner'];
 } else {
     // API 요청 및 응답 받아오기
-    $apiUrl = 'https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=G10&SD_SCHUL_CODE=7430310&KEY=916bf464c540487585f865f18d3f3ba0&MLSV_YMD=' . $SearchDate;
+    $sc_code = 7430310;
+    $r_code = "G10";
+    $KEY = "";
+    
+    $apiUrl = 'https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE='.$r_code.'&SD_SCHUL_CODE='.$sc_code."&KEY='.$KEY.'&MLSV_YMD=' . $SearchDate;
     $response = file_get_contents($apiUrl);
 
     // XML을 SimpleXMLElement로 파싱
@@ -77,7 +81,7 @@ if (file_exists($fileName)) {
 
 <head>
     <title>대덕소프트웨어마이스터고등학교 급식</title>
-    <link rel="stylesheet" href="donghyunStudio_DAEDOK_MENU_V21Alpha.css">
+    <link rel="stylesheet" href="css.css">
 
 </head>
 
