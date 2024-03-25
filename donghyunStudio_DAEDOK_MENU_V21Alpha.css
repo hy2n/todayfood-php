@@ -1,0 +1,221 @@
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+
+@font-face {
+    font-family: 'TAEBAEKfont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0 25%;
+    max-width: 50%;
+    font-family: 'Elice DX Neolli';
+    background: url('PL/image_v7.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+
+@keyframes rainbowLink {
+    0% {
+        color: #ff2a2a;
+    }
+
+    15% {
+        color: #ff7a2a;
+    }
+
+    30% {
+        color: #b68d1e;
+    }
+
+    45% {
+        color: #43ff2a;
+    }
+
+    60% {
+        color: #2a89ff;
+    }
+
+    75% {
+        color: #202082;
+    }
+
+    90% {
+        color: #6b2aff;
+    }
+
+    100% {
+        color: #e82aff;
+    }
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    height: 20px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link {
+    animation-duration: 3s;
+    animation-name: rainbowLink;
+    animation-iteration-count: infinite;
+    margin-right: 20px;
+}
+
+.date {
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 70px;
+    color: #2e2e2e;
+}
+
+button {
+    font-family: 'TAEBAEKfont';
+    font-size: 1em;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.food {
+    word-break: keep-all;
+    font-size: 1.1em;
+    color: #000000;
+    text-align: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#meal-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+    gap: 20px;
+}
+
+.meal-box {
+    width: 90%;
+    height: 130px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+}
+
+
+.message2say {
+    font-family: 'Elice DX Neolli';
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+a:link {
+    color: rgb(28, 86, 102);
+}
+
+a:visited {
+    color: rgb(28, 86, 102);
+}
+
+a:hover {
+    color: rgb(28, 86, 102);
+}
+
+#footer {
+    border-radius: 10px;
+    width: 100%;
+    color: #000000;
+    font-family: 'TAEBAEKfont';
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'TAEBAEKfont';
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#footer .txt {
+    font-size: 15;
+    font-style: normal;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+#footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        padding: 0 0;
+        max-width: 100%;
+    }
+    .header-link {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    .meal-box {
+        width: 60%;
+    }
+
+    .food {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #quote-box {
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    .date {
+        margin-bottom: 10px;
+    }
+
+    #header {
+        position: relative;
+    }
+
+}
